@@ -91,6 +91,8 @@ li,
 }
 .main__banner {
   background-image: url("./img/main-banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -150,6 +152,7 @@ li,
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .main .goods__cards-list__card div {
   background: #f8f9fa;
@@ -443,4 +446,72 @@ li,
 .footer__social__wrapper__links__usa a {
   font-size: 11px;
   line-height: 16px;
+}
+
+@media (max-width: 1279px) {
+  body {
+    max-width: 1000px;
+  }
+  .container {
+    width: 952px;
+  }
+  .main {
+    margin-bottom: 96px;
+  }
+  .main__banner {
+    height: 470px;
+    margin-bottom: 60px;
+  }
+  .main .goods {
+    margin-bottom: 86px;
+    padding-bottom: 72px;
+    border-bottom: 2px solid #80868b;
+  }
+  .main .goods__cards-list {
+    justify-content: center;
+    gap: 20px;
+  }
+  .main .goods__cards-list__card {
+    width: 273px;
+    height: 338px;
+  }
+  .main .goods__cards-list__card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .nba__wrapper {
+    gap: 60px;
+  }
+  .main .nba__wrapper img {
+    max-width: 416px;
+  }
+  .main .smart {
+    margin-bottom: 100px;
+  }
+  .main .smart__wrapper__card {
+    width: 302px;
+  }
+  .main .smart__wrapper .smart-big {
+    width: 463px;
+  }
+  .main .sustainability {
+    margin-bottom: 80px;
+  }
+  .main .sustainability__wrapper {
+    gap: 60px;
+  }
+  .main .sustainability__wrapper img {
+    max-width: 416px;
+  }
+  .main .registration {
+    padding: 28px 0 28px 0;
+  }
+  .main .pixel-pass__wrapper p:last-child {
+    text-align: center;
+    width: 940px;
+  }
+  .footer-container {
+    width: 952px;
+  }
 }/*# sourceMappingURL=style.css.map */

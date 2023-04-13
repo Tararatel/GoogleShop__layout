@@ -93,6 +93,8 @@ li,
 
 	&__banner {
 		background-image: url('./img/main-banner.png');
+		background-repeat: no-repeat;
+		background-size: contain;
 		height: 600px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -150,19 +152,20 @@ li,
 
 		&__cards-list {
 			@include flexSB($alignItems);
-		}
+			flex-wrap: wrap;
 
-		&__cards-list__card {
-			div {
-				background: $bgPrimCard;
-				border-radius: 20px;
-				padding: 20px 0;
-				margin-bottom: 20px;
-			}
+			&__card {
+				div {
+					background: $bgPrimCard;
+					border-radius: 20px;
+					padding: 20px 0;
+					margin-bottom: 20px;
+				}
 
-			h4 {
-				font-size: 16px;
-				line-height: 24px;
+				h4 {
+					font-size: 16px;
+					line-height: 24px;
+				}
 			}
 		}
 	}
@@ -471,5 +474,96 @@ li,
 				}
 			}
 		}
+	}
+}
+
+@media (max-width: 1279px) {
+	body {
+		max-width: 1000px;
+	}
+
+	.container {
+		width: 952px;
+	}
+
+	.main {
+		margin-bottom: 96px; // ???????
+
+		&__banner {
+			height: 470px;
+			margin-bottom: 60px;
+		}
+
+		.goods {
+			margin-bottom: 86px;
+			padding-bottom: 72px;
+			border-bottom: 2px solid $borderBottom;
+
+			&__cards-list {
+				justify-content: center;
+				gap: 20px;
+				&__card {
+					width: 273px;
+					height: 338px;
+
+					div {
+						@include flexCenter(center);
+					}
+				}
+			}
+		}
+
+		.nba {
+			&__wrapper {
+				gap: 60px;
+
+				img {
+					max-width: 416px;
+				}
+			}
+		}
+
+		.smart {
+			margin-bottom: 100px;
+
+			&__wrapper {
+				&__card {
+					width: 302px;
+				}
+
+				.smart-big {
+					width: 463px;
+				}
+			}
+		}
+
+		.sustainability {
+			margin-bottom: 80px;
+
+			&__wrapper {
+				gap: 60px;
+
+				img {
+					max-width: 416px;
+				}
+			}
+		}
+
+		.registration {
+			padding: 28px 0 28px 0;
+		}
+
+		.pixel-pass {
+			&__wrapper {
+				p:last-child {
+					text-align: center;
+					width: 940px;
+				}
+			}
+		}
+	}
+
+	.footer-container {
+		width: 952px;
 	}
 }

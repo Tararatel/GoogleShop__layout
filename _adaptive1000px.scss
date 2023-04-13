@@ -1,0 +1,88 @@
+@media (max-width: 1279px) {
+	body {
+		max-width: 1000px;
+	}
+
+	.container {
+		width: 952px;
+	}
+
+	.main {
+		&__banner {
+			height: 470px;
+			margin-bottom: 60px;
+		}
+
+		.goods {
+			margin-bottom: 86px;
+			padding-bottom: 72px;
+			border-bottom: 2px solid $borderBottom;
+
+			&__cards-list {
+				justify-content: center;
+				gap: 20px;
+				&__card {
+					width: 273px;
+					height: 338px;
+
+					div {
+						@include flexCenter(center);
+					}
+				}
+			}
+		}
+
+		.nba {
+			&__wrapper {
+				gap: 60px;
+
+				img {
+					max-width: 416px;
+				}
+			}
+		}
+
+		.smart {
+			margin-bottom: 100px;
+
+			&__wrapper {
+				&__card {
+					width: 302px;
+				}
+
+				.smart-big {
+					width: 463px;
+				}
+			}
+		}
+
+		.sustainability {
+			margin-bottom: 80px;
+
+			&__wrapper {
+				gap: 60px;
+
+				img {
+					max-width: 416px;
+				}
+			}
+		}
+
+		.registration {
+			padding: 28px 0 28px 0;
+		}
+
+		.pixel-pass {
+			&__wrapper {
+				p:last-child {
+					text-align: center;
+					width: 940px;
+				}
+			}
+		}
+	}
+
+	.footer-container {
+		width: 952px;
+	}
+}

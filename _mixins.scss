@@ -1,0 +1,30 @@
+@import 'vars';
+
+@mixin flexCenter($alignItems) {
+	display: flex;
+	justify-content: center;
+	align-items: $alignItems;
+}
+@mixin flexColumn($alignItems) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: $alignItems;
+}
+
+@mixin flexSB($alignItems) {
+	display: flex;
+	justify-content: space-between;
+	align-items: $alignItems;
+}
+@mixin fontHeight {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@mixin cleanBtn {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

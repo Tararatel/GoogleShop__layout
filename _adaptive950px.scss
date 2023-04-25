@@ -1,0 +1,135 @@
+@media (max-width: 999px) {
+	body {
+		max-width: 950px;
+	}
+
+	.container {
+		width: 902px;
+	}
+
+	.header__navigation {
+		position: relative;
+		&__links {
+			display: none;
+			flex-direction: column;
+			align-items: start;
+			gap: 15px;
+			width: 200px;
+			padding: 10px 10px 40px 10px;
+			box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+			background-color: #fff;
+			position: absolute;
+			top: 0;
+			left: -24px;
+
+			&_close {
+				@include cleanBtn();
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+		}
+
+		&__burger {
+			display: block;
+		}
+	}
+
+	.main {
+		&__banner {
+			height: 446px;
+			margin-bottom: 40px;
+		}
+
+		.goods {
+			margin-bottom: 46px;
+
+			&__title {
+				margin: 0 auto 40px;
+			}
+
+			&__cards-list {
+				.swiper-wrapper {
+					padding-bottom: 22px;
+				}
+			}
+		}
+
+		.nba {
+			&__wrapper {
+				gap: 60px;
+
+				img {
+					max-width: 416px;
+				}
+			}
+		}
+
+		.smart {
+			margin-bottom: 50px;
+
+			&__wrapper {
+				&__card {
+					width: 285px;
+
+					h2 {
+						width: 270px;
+						font-size: 30px;
+					}
+				}
+
+				.smart-big {
+					width: 439px;
+
+					h2 {
+						width: 300px;
+						font-size: 40px;
+					}
+				}
+			}
+		}
+
+		.category {
+			margin-bottom: 70px;
+			&__wrapper {
+				&__title {
+					font-size: 30px;
+				}
+			}
+		}
+
+		.sustainability {
+			margin-bottom: 50px;
+		}
+
+		.registration {
+			padding: 28px 0 28px 0;
+		}
+	}
+}
+
+.footer {
+	.footer-container {
+		width: 902px;
+	}
+
+	&__social {
+		&__wrapper {
+			&__icons {
+				gap: 10px;
+			}
+			&__links {
+				gap: 20px;
+
+				&__usa {
+					@include flexCenter(center);
+					gap: 12px;
+					width: 110px;
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+}

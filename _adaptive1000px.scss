@@ -15,12 +15,11 @@
 
 		.goods {
 			margin-bottom: 86px;
-			padding-bottom: 72px;
-			border-bottom: 2px solid $borderBottom;
 
 			&__cards-list {
-				justify-content: center;
-				gap: 20px;
+				.swiper-wrapper {
+					padding-bottom: 72px;
+				}
 				&__card {
 					width: 273px;
 					height: 338px;
@@ -76,13 +75,12 @@
 			&__wrapper {
 				p:last-child {
 					text-align: center;
-					width: 940px;
 				}
 			}
 		}
 	}
+}
 
-	.footer-container {
-		width: 952px;
-	}
+.footer-container {
+	width: 952px;
 }

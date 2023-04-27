@@ -1,0 +1,132 @@
+@media (max-width: 949px) {
+	body {
+		max-width: 641px;
+	}
+
+	.container {
+		width: 593px;
+	}
+
+	.main {
+		&__banner {
+			height: 300px;
+			align-content: baseline;
+
+			&__content {
+				gap: 18px;
+				width: 320px;
+				height: 268px;
+				text-align: center;
+				margin-left: 20px;
+
+				&__title {
+					font-size: 38px;
+					line-height: 48px;
+				}
+
+				&__text {
+					width: 260px;
+					margin: 0 auto;
+				}
+
+				&__btns-list {
+					gap: 10px;
+
+					button {
+						padding: 8px 10px;
+					}
+				}
+			}
+		}
+
+		.goods {
+			&__cards-list {
+				&__card {
+					height: auto;
+				}
+			}
+		}
+
+		.nba {
+			&__wrapper {
+				gap: 60px;
+				flex-direction: column;
+				align-items: center;
+
+				img {
+					max-width: 593px;
+				}
+
+				&__content {
+					padding-bottom: 20px;
+				}
+			}
+		}
+
+		.smart {
+			&__wrapper {
+				&__card {
+					width: 285px;
+
+					&:nth-child(3) {
+						width: 593px;
+
+						h2 {
+							width: 350px;
+							font-size: 40px;
+						}
+					}
+
+					h2 {
+						width: 270px;
+						font-size: 30px;
+					}
+				}
+
+				.smart-big {
+					width: 593px;
+
+					h2 {
+						width: 350px;
+						font-size: 40px;
+					}
+				}
+			}
+		}
+
+		.sustainability {
+			margin-bottom: 50px;
+
+			&__wrapper {
+				flex-direction: column;
+				align-items: center;
+
+				img {
+					max-width: 593px;
+				}
+			}
+		}
+
+		.registration {
+			padding: 28px 0 28px 0;
+		}
+	}
+}
+
+.footer {
+	.footer-container {
+		width: 593px;
+	}
+
+	&__social {
+		&__wrapper {
+			@include flexColumn(center);
+			gap: 20px;
+
+			&__links {
+				gap: 20px;
+				@include flexColumn(center);
+			}
+		}
+	}
+}

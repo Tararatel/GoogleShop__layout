@@ -123,6 +123,10 @@
 			&__links {
 				gap: 20px;
 
+				&__list {
+					gap: 20px;
+				}
+
 				&__usa {
 					@include flexCenter(center);
 					gap: 12px;

@@ -141,6 +141,9 @@ li,
 				button:focus {
 					border: 2px solid $grey;
 				}
+				button:hover {
+					border: 2px solid $grey;
+				}
 			}
 		}
 	}
@@ -467,7 +470,9 @@ li,
 				@include flexCenter(center);
 				gap: 40px;
 
-				a {
+				&__list {
+					@include flexCenter(center);
+					gap: 40px;
 					font-size: 11px;
 					line-height: 16px;
 				}
@@ -503,3 +508,4 @@ li,
 
 @import 'adaptive1000px';
 @import 'adaptive950px';
+@import 'adaptive650px';

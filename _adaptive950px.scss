@@ -108,30 +108,30 @@
 			padding: 28px 0 28px 0;
 		}
 	}
-}
 
-.footer {
-	.footer-container {
-		width: 902px;
-	}
+	.footer {
+		.footer-container {
+			width: 902px;
+		}
 
-	&__social {
-		&__wrapper {
-			&__icons {
-				gap: 10px;
-			}
-			&__links {
-				gap: 20px;
-
-				&__list {
-					gap: 20px;
+		&__social {
+			&__wrapper {
+				&__icons {
+					gap: 10px;
 				}
+				&__links {
+					gap: 20px;
 
-				&__usa {
-					@include flexCenter(center);
-					gap: 12px;
-					width: 110px;
-					margin-right: 30px;
+					&__list {
+						gap: 20px;
+					}
+
+					&__usa {
+						@include flexCenter(center);
+						gap: 12px;
+						width: 110px;
+						margin-right: 30px;
+					}
 				}
 			}
 		}

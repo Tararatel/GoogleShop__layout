@@ -155,7 +155,7 @@ li,
 			font-size: 16px;
 			line-height: 19px;
 			text-align: center;
-			width: 624px;
+			max-width: 624px;
 			margin: 0 auto 90px;
 		}
 
@@ -298,6 +298,8 @@ li,
 
 			&__list {
 				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
 				gap: 23px;
 
 				&__card {
@@ -372,7 +374,7 @@ li,
 		padding: 60px 0 68px 0;
 
 		&__wrapper {
-			width: 580px;
+			max-width: 580px;
 			@include flexColumn(center);
 			text-align: center;
 
@@ -472,6 +474,7 @@ li,
 
 				&__list {
 					@include flexCenter(center);
+					flex-wrap: wrap;
 					gap: 40px;
 					font-size: 11px;
 					line-height: 16px;
@@ -501,11 +504,9 @@ li,
 	text-align: center;
 	font-size: 18px;
 	background: #fff;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
 }
 
 @import 'adaptive1000px';
 @import 'adaptive950px';
 @import 'adaptive650px';
+@import 'adaptive375px';

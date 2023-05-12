@@ -53,6 +53,11 @@
 				flex-direction: column;
 				align-items: center;
 
+				&__content {
+					text-align: center;
+					align-items: center;
+				}
+
 				img {
 					max-width: 593px;
 				}
@@ -101,6 +106,11 @@
 				flex-direction: column;
 				align-items: center;
 
+				&__content {
+					text-align: center;
+					align-items: center;
+				}
+
 				img {
 					max-width: 593px;
 				}
@@ -111,21 +121,21 @@
 			padding: 28px 0 28px 0;
 		}
 	}
-}
 
-.footer {
-	.footer-container {
-		width: 593px;
-	}
+	.footer {
+		.footer-container {
+			width: 593px;
+		}
 
-	&__social {
-		&__wrapper {
-			@include flexColumn(center);
-			gap: 20px;
-
-			&__links {
-				gap: 20px;
+		&__social {
+			&__wrapper {
 				@include flexColumn(center);
+				gap: 20px;
+
+				&__links {
+					gap: 20px;
+					@include flexColumn(center);
+				}
 			}
 		}
 	}

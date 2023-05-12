@@ -1,0 +1,104 @@
+@media (max-width: 640px) {
+	body {
+		max-width: 375px;
+	}
+
+	.container {
+		width: 355px;
+	}
+
+	.main {
+		&__banner {
+			height: 300px;
+
+			&__content {
+				gap: 18px;
+				width: 320px;
+				height: 268px;
+				text-align: center;
+				margin-left: 20px;
+
+				&__title {
+					font-size: 38px;
+					line-height: 48px;
+				}
+
+				&__text {
+					width: 260px;
+					margin: 0 auto;
+				}
+
+				&__btns-list {
+					gap: 10px;
+
+					button {
+						padding: 8px 10px;
+					}
+				}
+			}
+		}
+
+		.nba {
+			&__wrapper {
+				gap: 25px;
+
+				&__content {
+					width: 355px;
+				}
+
+				img {
+					max-width: 355px;
+				}
+			}
+		}
+
+		.smart {
+			&__wrapper {
+				&__card {
+					width: 355px;
+
+					&:nth-child(3) {
+						width: 355px;
+					}
+				}
+
+				.smart-big {
+					width: 355px;
+				}
+			}
+		}
+
+		.sustainability {
+			margin-bottom: 40px;
+
+			&__wrapper {
+				&__content {
+					width: 355px;
+				}
+
+				img {
+					max-width: 355px;
+				}
+			}
+		}
+	}
+
+	.footer {
+		.footer-container {
+			width: 355px;
+		}
+
+		&__social {
+			&__wrapper {
+				&__icons {
+					gap: 25px;
+				}
+
+				&__links {
+					gap: 20px;
+					@include flexColumn(center);
+				}
+			}
+		}
+	}
+}

@@ -758,29 +758,21 @@ li,
   .container {
     width: 355px;
   }
-  .main__banner {
-    height: 300px;
-  }
-  .main__banner__content {
-    gap: 18px;
-    width: 320px;
-    height: 268px;
-    text-align: center;
-    margin-left: 20px;
-  }
-  .main__banner__content__title {
-    font-size: 38px;
-    line-height: 48px;
-  }
-  .main__banner__content__text {
-    width: 260px;
-    margin: 0 auto;
-  }
-  .main__banner__content__btns-list {
+  .header__banner {
+    padding: 10px 10px;
     gap: 10px;
+    flex-direction: column;
+    align-items: center;
   }
-  .main__banner__content__btns-list button {
-    padding: 8px 10px;
+  .header__banner__title {
+    line-height: 23px;
+    text-align: center;
+  }
+  .header__navigation__links {
+    left: -9px;
+  }
+  .main__banner {
+    background-size: cover;
   }
   .main .nba__wrapper {
     gap: 25px;

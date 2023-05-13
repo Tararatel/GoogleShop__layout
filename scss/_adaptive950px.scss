@@ -24,6 +24,7 @@
 
 			&_close {
 				@include cleanBtn();
+				display: block;
 				width: 15px;
 				height: 15px;
 				position: absolute;

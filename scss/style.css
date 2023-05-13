@@ -72,6 +72,9 @@ li,
 .header__navigation__links a:hover {
   border-bottom: 1px solid #80868b;
 }
+.header__navigation__links_close {
+  display: none;
+}
 .header__navigation__burger {
   background: none;
   border: none;
@@ -567,6 +570,7 @@ li,
     border: none;
     outline: none;
     cursor: pointer;
+    display: block;
     width: 15px;
     height: 15px;
     position: absolute;
